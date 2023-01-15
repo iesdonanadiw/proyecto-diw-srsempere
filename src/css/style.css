@@ -2,7 +2,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 0px;
     padding: 0px 0px 0px 14px;
     height: 60px;
     overflow: hidden;
@@ -24,6 +24,11 @@
     text-decoration: none;
 }
 
+#a-inicio {
+    border-left: none;
+    margin-left: 10px;
+}
+
 .logo-nav {
     width: 95px;
     height: 50px;
@@ -34,4 +39,44 @@
     width: 10em;
     height: 6em;
     padding: 18px 7px 2px 25px;
+}
+
+
+p {
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+#woman-blowing {
+    position: absolute;
+    height: 13em;
+    width: 20em;
+    border-radius: 30px;
+    margin: 30px 0px 0px 150px;
+    margin-top: 50px;
+}
+
+#texto-woman-blowing {
+    position: absolute;
+    text-align: left;
+    top: 368px;
+    left: 485px;
+}
+
+#texto-cafe-lectura {
+    position: absolute;
+    text-align: right;
+    top: 220px;
+    left: 600px;
+}
+
+#cafe-lectura {
+    position: absolute;
+    height: 13em;
+    width: 20em;
+    border-radius: 30px;
+    margin: 30px 0px 0px 900px;
+    margin-top: 50px;
 }
