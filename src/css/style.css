@@ -1,3 +1,61 @@
+/*
+    Sección de reseteo de estilos de navegadores.
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+Tenga en cuenta que divide las tags en grupos que deben recibir valores genéricos, como margin: 0, border: 0, padding: 0 y otras que necesitan valores más específicos, como
+
+ol, ul {
+    list-style: none;
+}
+
+/*
+    Sección de estilos de la página.
+*/
+
 .navegador ul {
     list-style: none;
     display: flex;
@@ -13,15 +71,16 @@
    display: inline;
    text-align: center;
    margin: 0 10px 0 0;
+   color: white;
 }
 
 
 
 .navegador li a {
     padding: 2px 7px 2px 7px;
-    color: white;
     border-left: 1px solid white;
     text-decoration: none;
+    color: white;
 }
 
 #a-inicio {
@@ -54,21 +113,22 @@ p {
     height: 13em;
     width: 20em;
     border-radius: 30px;
-    margin: 30px 0px 0px 150px;
-    margin-top: 50px;
+    margin: 00px 0px 0px 150px;
+    /* margin-top: 50px; */
 }
 
 #texto-woman-blowing {
     position: absolute;
     text-align: left;
-    top: 368px;
-    left: 485px;
+    /* top: 368px;
+    left: 485px; */
+    margin: 150px 0px 0px 475px;
 }
 
 #texto-cafe-lectura {
     position: absolute;
     text-align: right;
-    top: 220px;
+    top: 229px;
     left: 600px;
 }
 
@@ -77,6 +137,18 @@ p {
     height: 13em;
     width: 20em;
     border-radius: 30px;
-    margin: 30px 0px 0px 900px;
-    margin-top: 50px;
+    margin: 0px 0px 0px 900px;
+    /* margin-top: 50px; */
+}
+
+#grupo-lectura {
+    position: absolute;
+    height: 13em;
+    width: 20em;
+    border-radius: 30px;
+    margin: 250px 0px 0px 150px;
+}
+
+footer {
+    margin: 420px 0px 0px 0px;
 }
