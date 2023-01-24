@@ -1,3 +1,50 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Personalización de la página */
+
 .navegador ul {
     list-style: none;
     display: flex;
@@ -14,8 +61,6 @@
    text-align: center;
    margin: 0 10px 0 0;
 }
-
-
 
 .navegador li a {
     padding: 2px 7px 2px 7px;
@@ -41,42 +86,39 @@
     padding: 18px 7px 2px 25px;
 }
 
+/* Creación del Grid */
 
-p {
-    font-size: 0.9em;
-    font-family: 'Roboto', sans-serif;
-    color: black;
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    width: 85%;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px solid black;
 }
 
+.caja {
+    border: 4px solid black;
+    background-color: lightgray;
+    line-height: 150px;
+}
 
-#woman-blowing {
-    position: absolute;
-    height: 13em;
-    width: 20em;
+/* Personalización cajas */
+
+.img-grid {
+    width: 100%;
+    height: 80%;
     border-radius: 30px;
-    margin: 30px 0px 0px 150px;
-    margin-top: 50px;
 }
 
-#texto-woman-blowing {
-    position: absolute;
-    text-align: left;
-    top: 368px;
-    left: 485px;
+.text-grid {
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1;
 }
 
-#texto-cafe-lectura {
-    position: absolute;
-    text-align: right;
-    top: 220px;
-    left: 600px;
-}
+.prueba {
 
-#cafe-lectura {
-    position: absolute;
-    height: 13em;
-    width: 20em;
-    border-radius: 30px;
-    margin: 30px 0px 0px 900px;
-    margin-top: 50px;
 }
