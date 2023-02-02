@@ -176,48 +176,78 @@ table {
 
 /* Creación del Grid */
 
-.grid-layout {
+.container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    width: 85%;
-    margin: 0 auto;
-    background-color: lightgreen;
-    padding: 20px;
-    border: 1px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img1 texto1 img2"
+        "img1 texto2 img2"
+        "img3 texto3 img4"
+        "img3 texto4 img4";
+   margin: 1px 34px;
 }
 
-.caja {
-    border: 4px solid black;
-    background-color: lightgray;
-    line-height: 150px;
+.img1 {
+    grid-area: img1;
 }
 
-/* Personalización cajas */
-
-.img-grid {
-    width: 100%;
-    height: 90%;
+#img1 {
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 30px;
 }
 
-.text-grid {
-    font-size: 1.2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1;
+.img2 {
+    grid-area: img2;
 }
 
-.c2 {
-    display: grid;
-    align-self: end;
-    text-align: left;
-    margin-bottom: 45px;
-    margin-left: 10px;
+#img2 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
 }
 
-.c3 {
-    display: grid;
-    align-self: start;
+.texto1 {
+    grid-area: texto1;
     text-align: right;
-    margin-right: 10px;
+}
+
+.texto2 {
+    grid-area: texto2;
+    text-align: left;
+}
+
+.img3 {
+    grid-area: img3;
+    padding-top: 30px
+}
+
+#img3 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+.texto3 {
+    grid-area: texto3;
+    text-align: right;
+}
+
+.texto4 {
+    grid-area: texto4;
+    text-align: left;
+}
+
+.img4 {
+    grid-area: img4;
+    padding-top: 30px
+}
+
+#img4 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
 }
