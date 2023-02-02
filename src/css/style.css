@@ -132,22 +132,29 @@ table {
 
 /* Personalización de la página */
 
-.navegador ul {
-    list-style: none;
+/*
+    ###### HEADER ######
+*/
+
+.navegador {
     display: flex;
     align-items: center;
+    overflow: hidden;
+    background-color: #f5d097;
+    color: white;
+}
+
+.navegador ul {
+    list-style: none;
     margin: 0px;
     padding: 0px 0px 0px 14px;
     height: 60px;
-    overflow: hidden;
-    background-color: #f5d097;
 }
 
 .navegador li {
     display: inline;
     text-align: center;
     margin: 0 10px 0 0;
-    color: white;
 }
 
 .navegador li a {
@@ -174,6 +181,26 @@ table {
     padding: 18px 7px 2px 25px;
 }
 
+/*
+    ###### FOOTER ######
+*/
+
+.pie {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+}
+
+.pie .izquierda p {
+    display: inline;
+    padding-left: 2vw;
+}
+
+.pie .derecha {
+    padding-right: 12vw;
+}
+
 /* Creación del Grid */
 
 .container {
@@ -192,62 +219,81 @@ table {
 
 .img1 {
     grid-area: img1;
+    padding: 80px;
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 0px;
 }
 
 #img1 {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .img2 {
     grid-area: img2;
+    padding: 80px;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 #img2 {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .texto1 {
     grid-area: texto1;
     text-align: right;
+    padding-top: 50px;
+    padding-right: 14px;
 }
 
 .texto2 {
     grid-area: texto2;
     text-align: left;
+    padding-top: 55px;
+    padding-left: 14px;
 }
 
 .img3 {
     grid-area: img3;
-    padding-top: 30px
+    padding: 80px;
+    padding-top: 0px;
+    padding-right: 0px;
+
 }
 
 #img3 {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .texto3 {
     grid-area: texto3;
     text-align: right;
+    padding-right: 14px;
 }
 
 .texto4 {
     grid-area: texto4;
     text-align: left;
+    padding-left: 14px;
 }
 
 .img4 {
     grid-area: img4;
-    padding-top: 30px
+    padding: 80px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 #img4 {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px;
+    border-radius: 50px;
 }
