@@ -224,9 +224,9 @@ table {
     width: 100%;
     border-radius: 5vw;
     background-color: #dbdada8c;
-  }
+}
 
-  .input-icon {
+.input-icon {
     color: #918e8e;
     position: absolute;
     width: 20px;
@@ -234,7 +234,7 @@ table {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-  }
+}
 
 /*
     ###### BOTONES ######
@@ -282,7 +282,7 @@ button:hover {
     padding-right: 12vw;
 }
 
-/* Creación del Grid */
+/* Creación del Grid de index.html*/
 
 .container {
     display: grid;
@@ -377,4 +377,83 @@ button:hover {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50px;
+}
+
+/* publica.html */
+
+.titulo-encabezado {
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* GRID publica.html */
+
+.container-publica {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titlebook yearpublication npages"
+        "input-title input-year input-pages"
+        "licence language genere"
+        "input-licence input-language input-genere"
+        "terms . ."
+        ". . .";
+    margin: 20px 300px;
+}
+
+.titlebook {
+    grid-area: titlebook;
+}
+
+.yearpublication {
+    grid-area: yearpublication;
+}
+
+.npages {
+    grid-area: npages;
+}
+
+.input-title {
+    grid-area: input-title;
+}
+
+.input-year {
+    grid-area: input-year;
+}
+
+.input-pages {
+    grid-area: input-pages;
+}
+
+.licence {
+    grid-area: licence;
+}
+
+.input-licence {
+    grid-area: input-licence;
+}
+
+.language {
+    grid-area: language;
+}
+
+.input-language {
+    grid-area: input-language;
+}
+
+.genere {
+    grid-area: genere;
+}
+
+.input-genere {
+    grid-area: input-genere;
+}
+
+.terms {
+    grid-area: terms;
 }
