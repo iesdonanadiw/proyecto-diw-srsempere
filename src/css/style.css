@@ -139,10 +139,15 @@ table {
 .navegador {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #f5d097;
     color: white;
+}
+
+.navegador .izquierda div {
+    display: inline;
+    padding-left: 2vw;
 }
 
 .navegador ul {
@@ -186,6 +191,76 @@ table {
     height: 6.3em;
     padding: 18px 7px 2px 25px;
 }
+
+.izq-nav {
+    display: flex;
+    align-items: center;
+}
+
+.der-nav button+button {
+    margin-right: 5vw;
+    margin-left: 1vw;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+
+/* INPUT BÚSQUEDA */
+
+.input-wrapper {
+    position: relative;
+    width: 20vw;
+}
+
+.input {
+    box-sizing: border-box;
+    border-color: #918e8e;
+    color: #918e8e;
+    padding: 1em 1em 1em 3em;
+    width: 100%;
+    border-radius: 5vw;
+    background-color: #dbdada8c;
+  }
+
+  .input-icon {
+    color: #918e8e;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+/*
+    ###### BOTONES ######
+*/
+
+button {
+    font-family: Arial;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 3px #666666;
+    -moz-box-shadow: 0px 0px 3px #666666;
+    box-shadow: 0px 0px 3px #666666;
+    text-shadow: 0px 1px 3px #666666;
+    border: solid #DEC57E 2px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#DEC57E), to(#DEC57E));
+    background: -moz-linear-gradient(top, #DEC57E, #DEC57E);
+}
+
+button:hover {
+    background: #e62097;
+}
+
 
 /*
     ###### FOOTER ######

@@ -14,11 +14,11 @@
     <header>
         <nav>
             <div class="navegador">
-                <div class="izquierda">
+                <div class="izq-nav">
                     <div class="logo-nav">
                         <img id="img-nav" src="src/img/logo-removebg.png" alt="Logo de la red de tinta">
                     </div>
-                    <div>
+                    <div class="menu-dav">
                         <ul>
                             <li><a href="index.html" id="a-inicio">Inicio</a></li>
                             <li><a href="compartir.html">Compartir</a></li>
@@ -28,13 +28,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="derecha">
-                    <!-- TODO: Hacer botones y modificar el tipo del flex para que funcione igual que el footer. (  justify-content: space-between; en el CSS) -->
+                <div class="der-nav">
+                    <button>Sign up</button>
+                    <button>Login</button>
                 </div>
+
             </div>
         </nav>
-        <div>
+        <div class="logo-search">
             <img src="src/img/logo.png" alt="Logo de la red de tinta" class="logo-pag">
+            <div class="input-wrapper">
+                <input type="search" class="input" placeholder="Buscar entre líneas">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                </svg>
+              </div>
         </div>
     </header>
     <main>
@@ -75,7 +84,7 @@
             <p>Contacto</p>
         </div>
         <div class="derecha">
-            <p>© 2022 Cádiz ES. Todos los derechos reservados</p>
+            <p>© 2023 Cádiz ES. Todos los derechos reservados</p>
         </div>
     </footer>
 
