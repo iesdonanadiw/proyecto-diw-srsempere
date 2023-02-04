@@ -142,6 +142,11 @@ body {
     ###### HEADER ######
 */
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .navegador {
     display: flex;
     flex-direction: row;
@@ -170,8 +175,6 @@ body {
     padding-left: 1vw;
     padding-right: 1vw;
     border-left: 1px solid white;
-    text-decoration: none;
-    color: white;
 }
 
 #a-inicio {
@@ -218,8 +221,6 @@ body {
 /*
     ###### MAIN ######
 */
-
-
 
 
 
@@ -300,6 +301,7 @@ button:hover {
     padding-right: 12vw;
 }
 
+/* INDEX.HTML */
 
 /* Creación del Grid de index.html*/
 
@@ -398,7 +400,7 @@ button:hover {
     border-radius: 50px;
 }
 
-/* publica.html */
+/* PUBLICA.HTML */
 
 .titulo-encabezado {
     text-align: center;
@@ -521,5 +523,86 @@ select {
 }
 
 .add-book {
-   grid-area: add-book;
+    grid-area: add-book;
+    padding-top: 0.2vh;
+
+}
+
+
+/* REGISTRER.HTML */
+
+.container-registrer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "legend-form . ."
+        "name first-name email"
+        "input-name input-firstname input-email"
+        "city country cp"
+        "input-city input-country input-cp"
+        "accept-term . ."
+        "button . .";
+}
+
+.legend-form {
+    grid-area: legend-form;
+}
+
+.name {
+    grid-area: name;
+}
+
+.input-name {
+    grid-area: input-name;
+}
+
+.city {
+    grid-area: city;
+}
+
+.input-city {
+    grid-area: input-city;
+}
+
+.accept-term {
+    grid-area: accept-term;
+}
+
+.button {
+    grid-area: button;
+}
+
+.first-name {
+    grid-area: first-name;
+}
+
+.input-firstname {
+    grid-area: input-firstname;
+}
+
+.country {
+    grid-area: country;
+}
+
+.input-country {
+    grid-area: input-country;
+}
+
+.email {
+    grid-area: email;
+}
+
+.input-email {
+    grid-area: input-email;
+}
+
+.cp {
+    grid-area: cp;
+}
+
+.input-cp {
+    grid-area: input-cp;
 }

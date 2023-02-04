@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Red de Tinta</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navegador">
+                <div class="izq-nav">
+                    <div class="logo-nav">
+                        <a href="index.html"><img id="img-nav" src="src/img/logo-removebg.png" alt="Logo de la red de tinta"></a>
+                    </div>
+                    <div class="menu-dav">
+                        <ul>
+                            <li><a href="index.html" id="a-inicio">Inicio</a></li>
+                            <li><a href="compartir.html">Compartir</a></li>
+                            <li><a href="publica.html">Publica</a></li>
+                            <li><a href="grupos-lectura.html">Grupos de lectura</a></li>
+                            <li><a href="viaja.html">Viaja</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="der-nav">
+                    <button hidden><a href="registrer.html">Sign up</a></button>
+                    <button><a href="login.html">Login</a></button>
+                </div>
+
+            </div>
+        </nav>
+        <div class="logo-search">
+            <img src="src/img/logo.png" alt="Logo de la red de tinta" class="logo-pag">
+            <h1 class="titulo-encabezado">Publica Tinta</h1>
+            <div class="input-wrapper">
+                <input type="search" class="input" placeholder="Buscar entre líneas">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-registrer">
+            <div class="legend-form">DATOS PERSONALES</div>
+            <div class="name">Nombre</div>
+            <div class="input-name"><input type="text" name="inp-name" id="inp-name" class="input-form"></div>
+            <div class="city">Ciudad</div>
+            <div class="input-city"><input type="text" name="inp-city" id="inp-city" class="input-form"></div>
+            <div class="accept-term">
+                <input type="checkbox" name="accept" id="accept">
+                <p>Acepto los términos</p>
+            </div>
+            <div class="button"></div>
+            <div class="first-name"></div>
+            <div class="input-firstname"><input type="text" name="inp-firstname" id="inp-firstname" class="input-form"></div>
+            <div class="country"></div>
+            <div class="input-country">Select de país</div>
+            <div class="email"></div>
+            <div class="input-email"><input type="text" name="inp-email" id="inp-email" class="input-form"></div>
+            <div class="cp"></div>
+            <div class="input-cp"><input type="text" name="inp-cp" id="inp-cp" class="input-form"></div>
+        </div>
+
+    </main>
+    <footer class="pie navegador ">
+        <div class="izquierda">
+            <p>Quienes somos</p>
+            <p>Contacto</p>
+        </div>
+        <div class="derecha">
+            <p>© 2023 Cádiz ES. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</html>
