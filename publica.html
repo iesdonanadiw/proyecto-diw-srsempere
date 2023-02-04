@@ -42,22 +42,37 @@
                 <input type="search" class="input" placeholder="Buscar entre líneas">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
                 </svg>
-              </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="container-publica">
-            <div class="titlebook"><p>Título del libro</p></div>
-            <div class="yearpublication"><p>Año publicación</p></div>
-            <div class="npages"><p>Nº de páginas</p></div>
-            <div class="input-title"><input type="text" name="inp-titlebook" id="inp-titlebook" class="input-form"></div>
+            <div class="titlebook">
+                <p>Título del libro</p>
+            </div>
+            <div class="yearpublication">
+                <p>Año publicación</p>
+            </div>
+            <div class="npages">
+                <p>Nº de páginas</p>
+            </div>
+            <div class="input-title"><input type="text" name="inp-titlebook" id="inp-titlebook" class="input-form">
+            </div>
             <div class="input-year"><input type="text" name="inp-year" id="inp-year" class="input-form"></div>
             <div class="input-pages"><input type="text" name="inp-pages" id="inp-pages" class="input-form"></div>
-            <div class="licence"><p>Licencia de publicación</p></div>
-            <div class="input-licence"><p>Input licencia</p></div>
-            <div class="language"><p>Idioma</p></div>
+            <div class="licence">
+                <p>Licencia de publicación</p>
+            </div>
+            <div class="input-licence">
+                <input type="text" name="inp-licence" id="inp-licence" class="input-form">
+            </div>
+            <div class="language">
+                <p>Idioma</p>
+            </div>
             <div class="input-language">
                 <select>
                     <option value="es">Español</option>
@@ -78,14 +93,19 @@
                     <option value="pl">Polaco</option>
                     <option value="ro">Rumano</option>
                     <option value="fa">Persa</option>
-                  </select>
+                </select>
             </div>
-            <div class="genere"><p>Género</p></div>
+            <div class="genere">
+                <p>Género</p>
+            </div>
             <div class="input-genere"><input type="text" name="inp-genere" id="inp-genere" class="input-form"></div>
-            <div class="terms"><p>Acepto los términos</p></div>
-          </div>
+            <div class="terms"><input type="checkbox" name="accept" id="accept">
+                <p>Acepto los términos</p>
+            </div>
+            <div class="add-book"><button>Añadir libro</button></div>
+        </div>
     </main>
-    <footer class="navegador pie">
+    <footer class="pie navegador ">
         <div class="izquierda">
             <p>Quienes somos</p>
             <p>Contacto</p>
@@ -94,5 +114,4 @@
             <p>© 2023 Cádiz ES. Todos los derechos reservados</p>
         </div>
     </footer>
-
 </html>

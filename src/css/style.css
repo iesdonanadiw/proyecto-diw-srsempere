@@ -132,6 +132,12 @@ table {
 
 /* Personalización de la página */
 
+body {
+    position: relative;
+
+    min-height: 100vh;
+}
+
 /*
     ###### HEADER ######
 */
@@ -209,6 +215,14 @@ table {
     padding-right: 5vw;
 }
 
+/*
+    ###### MAIN ######
+*/
+
+
+
+
+
 /* INPUT BÚSQUEDA */
 
 .input-wrapper {
@@ -258,7 +272,7 @@ button {
 }
 
 button:hover {
-    background: #e62097;
+    background: #f5cf97;
 }
 
 
@@ -266,11 +280,15 @@ button:hover {
     ###### FOOTER ######
 */
 
+
 .pie {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5vw;
+    position: absolute;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .pie .izquierda p {
@@ -281,6 +299,7 @@ button:hover {
 .pie .derecha {
     padding-right: 12vw;
 }
+
 
 /* Creación del Grid de index.html*/
 
@@ -402,7 +421,7 @@ button:hover {
         "licence language genere"
         "input-licence input-language input-genere"
         "terms . ."
-        ". . .";
+        "add-book . .";
     margin: 20px 300px;
     padding-top: 5vh;
     padding-left: 8vw;
@@ -416,7 +435,6 @@ button:hover {
     grid-area: yearpublication;
     width: fit-content;
     padding-left: 0vw;
-    /* border: 1px solid brown; */
 }
 
 .npages {
@@ -451,6 +469,7 @@ button:hover {
 
 .input-licence {
     grid-area: input-licence;
+    width: 90%;
 }
 
 .language {
@@ -462,7 +481,7 @@ button:hover {
 .input-language {
     grid-area: input-language;
     padding-left: 1vw;
-    padding-top: 1vh;
+    padding-top: 1.8vh;
     border-radius: 5px;
 }
 
@@ -476,17 +495,21 @@ button:hover {
     grid-area: input-genere;
     width: 40%;
     height: 100%;
-    padding-top: 1vh;
+    padding-top: 0vh;
     margin-left: -5.6vw;
 }
 
 .terms {
     grid-area: terms;
+    padding-top: 1.5vh;
+}
+
+.terms p {
+    display: inline;
 }
 
 .input-form {
-    /* background-color: #F8F8F8; */
-    background-color: #e04e4e;
+    background-color: #e2e2e2;
     border: none;
     width: 100%;
     height: 100%;
@@ -494,5 +517,9 @@ button:hover {
 }
 
 select {
-    background-color: #F8F8F8;
+    background-color: #e2e2e2;
+}
+
+.add-book {
+   grid-area: add-book;
 }
