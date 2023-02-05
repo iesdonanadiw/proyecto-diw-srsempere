@@ -544,7 +544,6 @@ select {
         "accept-term . ."
         "button . .";
     margin: 20px 300px;
-    /* padding-top: 1vh; */
     padding-left: 8vw;
 }
 
@@ -634,4 +633,151 @@ select {
     grid-area: input-cp;
     width: 40%;
     padding-top: 1vh;
+}
+
+/* COMPARTIR.HTML */
+
+.container-compartir {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "quote quote"
+        "fragmento1 fragmento2"
+        "foto1 foto2";
+}
+
+.quote {
+    grid-area: quote;
+}
+
+.foto1 {
+    grid-area: foto1;
+    max-width: 5em;
+    max-height: 5em;
+    border: 2px solid black;
+}
+
+.foto1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.fragmento1 {
+    grid-area: fragmento1;
+    display: block;
+    text-align: center;
+    left: 10vw;
+    top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fragmento1 h2 {
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 4vh;
+}
+
+.fragmento1 p {
+    padding: 2vh;
+    font-size: 0.9em;
+}
+
+.fragmento2 {
+    grid-area: fragmento2;
+    left: 13vw;
+    top: 5vh;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fragmento2 h2 {
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 4vh;
+}
+
+.fragmento2 p {
+    padding: 2vh;
+    font-size: 0.9em;
+}
+
+
+/* QUOTE */
+
+.img-comillas {
+    position: absolute;
+    max-width: 5em;
+    max-height: 5em;
+    top: 42vh;
+    left: 13vw;
+}
+
+.form-quote {
+    /* border: 2px solid black; */
+    height: 30vh;
+    border-radius: 0em 0em 7em 0em;
+    width: 60%;
+    padding-top: 20vh;
+    padding-left: 19vw;
+}
+
+.title-quote {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0em 3em 0em 0em;
+    border: 2px solid lightgrey;
+    background-color: lightgrey;
+    height: 6vh;
+}
+
+.title-quote cite {
+    font-size: 1.5em;
+    padding-left: 2vw;
+}
+
+.text-quote {
+    display: block;
+    font-size: 1.5em;
+}
+
+.text-quote p:first-child {
+    padding-top: 4vh;
+    padding-left: 5vw;
+}
+
+.text-quote p:last-child{
+    color: lightgrey;
+    font-size: 0.9em;
+    padding-top: 1vh;
+    padding-left: 6vw;
+}
+
+/* CREACIÓN DEL BOCADILLO */
+.bocadillo-cuadrado {
+    position: relative;
+    height: 200px;
+    width: 450px;
+    background: white;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+.bocadillo-cuadrado:before {
+    border: 25px solid white;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -48px;
+    left: calc(50% - 25px)
 }
