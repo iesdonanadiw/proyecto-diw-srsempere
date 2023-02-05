@@ -452,7 +452,7 @@ button:hover {
 
 .input-year {
     grid-area: input-year;
-    width: 55%;
+    width: 40%;
     height: 100%;
     padding-left: 0em;
 }
@@ -476,15 +476,14 @@ button:hover {
 
 .language {
     grid-area: language;
-    padding-left: 1vw;
     padding-top: 0.7em;
 }
 
 .input-language {
     grid-area: input-language;
-    padding-left: 1vw;
-    padding-top: 1.8vh;
     border-radius: 5px;
+    width: 40%;
+    height: 100%;
 }
 
 .genere {
@@ -545,19 +544,20 @@ select {
         "accept-term . ."
         "button . .";
     margin: 20px 300px;
-    padding-top: 5vh;
+    /* padding-top: 1vh; */
     padding-left: 8vw;
 }
 
 .legend-form {
     grid-area: legend-form;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-style: italic;
     font-weight: bold;
 }
 
 .name {
     grid-area: name;
+    padding-top: 3vh;
 }
 
 .input-name {
@@ -567,14 +567,14 @@ select {
 
 .city {
     grid-area: city;
-    padding-top: 2vh;
+    padding-top: 4vh;
 }
 
 .input-city {
     grid-area: input-city;
     width: 69%;
     height: 39px;
-    padding-top: 0.6vh;
+    padding-top: 1vh;
 }
 
 .accept-term {
@@ -593,8 +593,10 @@ select {
 .button button {
     margin-top: 0.7vh;
 }
+
 .first-name {
     grid-area: first-name;
+    padding-top: 3vh;
 }
 
 .input-firstname {
@@ -604,16 +606,18 @@ select {
 
 .country {
     grid-area: country;
-    padding-top: 2vh;
+    padding-top: 4vh;
 }
 
 .input-country {
     grid-area: input-country;
-    width: 25%;
+    width: 40%;
+    padding-top: 1vh;
 }
 
 .email {
     grid-area: email;
+    padding-top: 3vh;
 }
 
 .input-email {
@@ -623,10 +627,11 @@ select {
 
 .cp {
     grid-area: cp;
-    padding-top: 2vh;
+    padding-top: 4vh;
 }
 
 .input-cp {
     grid-area: input-cp;
-    width: 25%;
+    width: 40%;
+    padding-top: 1vh;
 }
