@@ -525,7 +525,6 @@ select {
 .add-book {
     grid-area: add-book;
     padding-top: 0.2vh;
-
 }
 
 
@@ -545,10 +544,16 @@ select {
         "input-city input-country input-cp"
         "accept-term . ."
         "button . .";
+    margin: 20px 300px;
+    padding-top: 5vh;
+    padding-left: 8vw;
 }
 
 .legend-form {
     grid-area: legend-form;
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .name {
@@ -557,38 +562,54 @@ select {
 
 .input-name {
     grid-area: input-name;
+    width: 69%;
 }
 
 .city {
     grid-area: city;
+    padding-top: 2vh;
 }
 
 .input-city {
     grid-area: input-city;
+    width: 69%;
+    height: 39px;
+    padding-top: 0.6vh;
 }
 
 .accept-term {
     grid-area: accept-term;
+    padding-top: 2vh;
+}
+
+.accept-term p {
+    display: inline;
 }
 
 .button {
     grid-area: button;
 }
 
+.button button {
+    margin-top: 0.7vh;
+}
 .first-name {
     grid-area: first-name;
 }
 
 .input-firstname {
     grid-area: input-firstname;
+    width: 69%;
 }
 
 .country {
     grid-area: country;
+    padding-top: 2vh;
 }
 
 .input-country {
     grid-area: input-country;
+    width: 25%;
 }
 
 .email {
@@ -597,12 +618,15 @@ select {
 
 .input-email {
     grid-area: input-email;
+    width: 69%;
 }
 
 .cp {
     grid-area: cp;
+    padding-top: 2vh;
 }
 
 .input-cp {
     grid-area: input-cp;
+    width: 25%;
 }
