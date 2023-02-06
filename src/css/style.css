@@ -739,7 +739,6 @@ select {
 }
 
 .form-quote {
-    /* border: 2px solid black; */
     height: 30vh;
     border-radius: 0em 0em 7em 0em;
     width: 60%;
@@ -774,7 +773,7 @@ select {
     padding-left: 5vw;
 }
 
-.text-quote p:last-child{
+.text-quote p:last-child {
     color: lightgrey;
     font-size: 0.9em;
     padding-top: 1vh;
@@ -782,6 +781,7 @@ select {
 }
 
 /* CREACIÓN DEL BOCADILLO */
+
 .bocadillo-cuadrado {
     position: relative;
     height: 200px;
@@ -789,6 +789,7 @@ select {
     background: white;
     box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
 }
+
 .bocadillo-cuadrado:before {
     border: 25px solid white;
     content: '';
@@ -799,3 +800,58 @@ select {
     bottom: -48px;
     left: calc(50% - 25px)
 }
+
+
+/* GRUPOS-LECTURA.HTML */
+
+.container-registrer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . calendario"
+        ". contenido contenido ."
+        ". . . boton_añadir";
+}
+
+.calendario {
+    grid-area: calendario;
+    display: flex;
+
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.boton_añadir {
+    grid-area: boton_añadir;
+}
+
+
+/* Estilo para el calendario */
+
+.tabla-calendario{
+    margin-top: 1em;
+    background-color: lightgrey;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  .tabla-calendario th, .tabla-calendario td{
+    text-align: center;
+    padding: .2em .5em;
+  }
+
+  .tabla-calendario caption{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: .5em;
+  }
+
+  .tabla-calendario tr{
+    border-bottom: none;
+  }
