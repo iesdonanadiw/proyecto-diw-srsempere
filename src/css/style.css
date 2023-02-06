@@ -639,8 +639,8 @@ select {
 
 .container-compartir {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.8fr 0.8fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -655,26 +655,38 @@ select {
 
 .foto1 {
     grid-area: foto1;
-    max-width: 5em;
-    max-height: 5em;
-    border: 2px solid black;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .foto1 img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 5em;
+    max-height: 5em;
 }
 
 .foto2 {
     grid-area: foto2;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 4vw;
+}
+
+.foto2 img {
+    max-width: 5em;
+    max-height: 5em;
 }
 
 .fragmento1 {
     grid-area: fragmento1;
+    /* background-color: #812828; */
     display: block;
     text-align: center;
     left: 10vw;
-    top: 5vh;
+    top: 4vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -682,11 +694,17 @@ select {
     font-size: 1em;
     font-weight: bold;
     padding-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .fragmento1 p {
     padding: 2vh;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .fragmento2 {
