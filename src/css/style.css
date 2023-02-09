@@ -856,6 +856,12 @@ select {
     grid-area: foto-forma;
 }
 
+.foto-forma img {
+    max-width: 30em;
+    max-height: 30em;
+    clip-path: inset(20px 125px 20px 0px);
+}
+
 .titulo-forma {
     grid-area: titulo-forma;
 }
