@@ -732,9 +732,9 @@ select {
 
 .img-comillas {
     position: absolute;
-    max-width: 5em;
-    max-height: 5em;
-    top: 42vh;
+    max-width: 6em;
+    max-height: 6em;
+    top: 38vh;
     left: 13vw;
 }
 
@@ -822,18 +822,24 @@ select {
     grid-area: calendario;
 }
 
+.calendario-input input {
+    color: grey;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
 .boton-agregar {
     grid-area: boton-agregar;
 }
 
 .contain-forma {
     grid-area: contain-forma;
-    margin-top: 6em;
-    margin-left: 20em;
+    margin-top: 13em;
+    margin-left: 16em;
     background-color: #eec996;
-    width: 40vw;
-    height: 40vh;
-    border-radius: 0px 130px 0px 170px;
+    width: 48vw;
+    height: 50vh;
+    border-radius: 0px 130px 0px 230px;
     /* CREACIÓN DEL GRID INTERNO */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -854,6 +860,16 @@ select {
     grid-area: titulo-forma;
 }
 
+.titulo-forma h1 {
+    font-size: 3.6em;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 1.3em;
+    padding-top: 0.5em;
+    letter-spacing: 0.1em;
+}
+
 .cuerpo-forma {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -872,6 +888,23 @@ select {
 
 .nombre-evento {
     grid-area: nombre-evento;
+}
+
+.nombre-evento p:first-of-type {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.5em;
+    font-style: italic;
+}
+
+.nombre-evento p {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0.3em;
+    font-size: 1.95em;
 }
 
 .btn-galeria {
@@ -928,7 +961,6 @@ select {
 }
 
 .day-name {
-    /* background-color: #eeeeee7a; */
     color: #aea9a9b2;
     font-weight: bold;
     text-align: center;
