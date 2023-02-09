@@ -804,54 +804,56 @@ select {
 
 /* GRUPOS-LECTURA.HTML */
 
-.container-registrer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". . . calendario"
-        ". contenido contenido ."
-        ". . . boton_añadir";
-}
+/* Contenedor flex calendario */
 
-.calendario {
-    grid-area: calendario;
+.contain-calendario {
     display: flex;
-
-}
-
-.contenido {
-    grid-area: contenido;
-}
-
-.boton_añadir {
-    grid-area: boton_añadir;
-}
-
-
-/* Estilo para el calendario */
-
-.tabla-calendario{
-    margin-top: 1em;
-    background-color: lightgrey;
     flex-direction: row;
-    justify-content: right;
-  }
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 2em;
+    padding-right: 6em;
+}
 
-  .tabla-calendario th, .tabla-calendario td{
+/* Contenedor flex grupos */
+
+.grupos {
+    background-color: #eec996;
+    width: 20vw;
+    height: 20vh;
+}
+
+/* Calendario*/
+.calendario {
     text-align: center;
-    padding: .2em .5em;
-  }
+    width: 300px;
+}
 
-  .tabla-calendario caption{
+.calendario ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+.calendario li {
+    text-align: right;
+    padding: 0.3em;
+}
+
+.calendario h1 {
+    font-size: 1.6em;
     font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
-    margin-bottom: .5em;
-  }
+    padding-bottom: 1vh;
+}
 
-  .tabla-calendario tr{
-    border-bottom: none;
-  }
+.first-day {
+    grid-column: 7;
+}
+
+.day-name {
+    /* background-color: #eeeeee7a; */
+    color: #aea9a9b2;
+    font-weight: bold;
+    text-align: center;
+}
