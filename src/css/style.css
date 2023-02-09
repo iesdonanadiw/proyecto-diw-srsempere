@@ -648,7 +648,7 @@ select {
     grid-template-areas:
         "quote quote"
         "fragmento1 fragmento2"
-        "foto1 foto2";
+        ". .";
 }
 
 .quote {
@@ -657,10 +657,10 @@ select {
 
 .foto1 {
     grid-area: foto1;
-    /* background-color: lightgreen; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 3em;
 }
 
 .foto1 img {
@@ -670,11 +670,10 @@ select {
 
 .foto2 {
     grid-area: foto2;
-    /* background-color: lightgray; */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 4vw;
+    margin-top: 3.8em;
 }
 
 .foto2 img {
@@ -684,7 +683,6 @@ select {
 
 .fragmento1 {
     grid-area: fragmento1;
-    /* background-color: #812828; */
     display: block;
     text-align: center;
     left: 10vw;
@@ -712,7 +710,7 @@ select {
 .fragmento2 {
     grid-area: fragmento2;
     left: 13vw;
-    top: 5vh;
+    top: 4vh;
     display: block;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -815,8 +813,8 @@ select {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos calendario calendario"
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
+        ". contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma calendario calendario"
+        ". contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma contain-forma . ."
         ". . . . . . . . . . . boton-agregar";
 }
 
@@ -828,22 +826,77 @@ select {
     grid-area: boton-agregar;
 }
 
-.contain-grupos {
-    grid-area: contain-grupos;
-    padding-left: 18vw;
-    padding-top: 22vh;
-}
-
-
-
-/* Contenido grupos.html */
-
-.grupos {
+.contain-forma {
+    grid-area: contain-forma;
+    margin-top: 6em;
+    margin-left: 20em;
     background-color: #eec996;
     width: 40vw;
     height: 40vh;
     border-radius: 0px 130px 0px 170px;
+    /* CREACIÓN DEL GRID INTERNO */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        "titulo-forma titulo-forma foto-forma"
+        "cuerpo-forma cuerpo-forma cuerpo-forma"
+        "cuerpo-forma cuerpo-forma cuerpo-forma";
 }
+
+/* Clases del GRID interno */
+.foto-forma {
+    grid-area: foto-forma;
+}
+
+.titulo-forma {
+    grid-area: titulo-forma;
+}
+
+.cuerpo-forma {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        ". calendario-input ."
+        "nombre-evento nombre-evento nombre-evento"
+        ". btn-galeria .";
+    grid-area: cuerpo-forma;
+}
+
+.calendario-input {
+    grid-area: calendario-input;
+}
+
+.nombre-evento {
+    grid-area: nombre-evento;
+}
+
+.btn-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "btn1 btn2 btn3";
+    grid-area: btn-galeria;
+}
+
+.btn1 {
+    grid-area: btn1;
+}
+
+.btn2 {
+    grid-area: btn2;
+}
+
+.btn3 {
+    grid-area: btn3;
+}
+
+/* Contenido grupos.html */
 
 /* Calendario*/
 .calendario {
