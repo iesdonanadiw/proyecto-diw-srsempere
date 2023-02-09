@@ -811,21 +811,12 @@ select {
 .container-grupos {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos calendario calendario"
         ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos contain-grupos . ."
-        ". . . . . . . . . . . ."
-        ". . . . . . . . . . . ."
-        ". . . . . . . . . . . ."
         ". . . . . . . . . . . boton-agregar";
 }
 
