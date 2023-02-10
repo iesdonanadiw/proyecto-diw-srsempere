@@ -857,9 +857,10 @@ select {
 }
 
 .foto-forma img {
-    max-width: 30em;
-    max-height: 30em;
-    clip-path: inset(20px 125px 20px 0px);
+    max-width: 20em;
+    max-height: 20em;
+    /* clip-path: inset(0px 0px 0px 0px); */
+    border-radius: 0px 130px 0px 110px;
 }
 
 .titulo-forma {
@@ -925,14 +926,26 @@ select {
 
 .btn1 {
     grid-area: btn1;
+    margin-top: 0.8em;
+    background-color: #ffffff;
+    width: 70px;
+    height: 1.5em;
 }
 
 .btn2 {
     grid-area: btn2;
+    margin-top: 0.8em;
+    background-color: #d9d9d9;
+    width: 70px;
+    height: 1.5em;
 }
 
 .btn3 {
     grid-area: btn3;
+    margin-top: 0.8em;
+    background-color: #d9d9d9;
+    width: 70px;
+    height: 1.5em;
 }
 
 /* Contenido grupos.html */
