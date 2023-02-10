@@ -988,55 +988,99 @@ select {
 }
 
 /* VIAJAR.HTML */
+
 .container-viajar {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". foto1 foto1 foto1 . foto2 foto2 foto2 . foto3 foto3 foto3"
-        ". texto1 texto1 texto1 . texto2 texto2 texto2 . texto3 texto3 texto3"
-        ". . . imagen4 imagen4 imagen4 . imagen5 imagen5 imagen5 . ."
-        ". . . texto4 texto4 texto4 . texto5 texto5 texto5 . .";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
-.foto1 {
-    grid-area: foto1;
+/*  Fila 1 */
+
+.fila1-viajar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+
 }
 
-.foto2 {
-    grid-area: foto2;
+.fila1-viajar img {
+    max-width: 356px;
+    max-height: 200px;
 }
 
-.foto3 {
-    grid-area: foto3;
+.fila1-viajar p {
+    max-width: 356px;
+    max-height: 200px;
 }
 
-.texto1 {
-    grid-area: texto1;
+.elemento1-viajar {
+    border: 3px solid red;
+    height: 300px;
+    width: 356px;
+    padding: 2em;
 }
 
-.texto2 {
-    grid-area: texto2;
+.elemento1-viajar img {
+    width: 100%;
 }
 
-.texto3 {
-    grid-area: texto3;
+.elemento2-viajar {
+    border: 3px solid green;
+    height: 300px;
+    width: 356px;
+    padding: 2em;
 }
 
-.imagen4 {
-    grid-area: imagen4;
+.elemento2-viajar img {
+    width: 100%;
 }
 
-.imagen5 {
-    grid-area: imagen5;
+.elemento3-viajar {
+    border: 3px solid blue;
+    height: 300px;
+    width: 356px;
+    padding: 2em;
 }
 
-.texto4 {
-    grid-area: texto4;
+/* Fila 2 */
+
+.fila2-viajar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.texto5 {
-    grid-area: texto5;
+.fila2-viajar img {
+    max-width: 356px;
+    max-height: 200px;
+}
+
+.fila2-viajar p {
+    max-width: 356px;
+    max-height: 200px;
+}
+
+.elemento4-viajar {
+    border: 3px solid rgb(255, 230, 9);
+    height: 300px;
+    width: 356px;
+    padding: 2em;
+    padding-right: 4em;
+}
+
+.elemento5-viajar {
+    border: 3px solid rgb(214, 9, 255);
+    height: 300px;
+    width: 356px;
+    padding: 2em;
+    padding-left: 4em;
+}
+
+.elemento5-viajar img {
+    width: 100%;
 }
