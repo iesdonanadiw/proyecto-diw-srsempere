@@ -830,6 +830,8 @@ select {
 
 .boton-agregar {
     grid-area: boton-agregar;
+    padding-top: 23vh;
+    padding-left: 5vw;
 }
 
 .contain-forma {
@@ -983,4 +985,58 @@ select {
     color: #aea9a9b2;
     font-weight: bold;
     text-align: center;
+}
+
+/* VIAJAR.HTML */
+.container-viajar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". foto1 foto1 foto1 . foto2 foto2 foto2 . foto3 foto3 foto3"
+        ". texto1 texto1 texto1 . texto2 texto2 texto2 . texto3 texto3 texto3"
+        ". . . imagen4 imagen4 imagen4 . imagen5 imagen5 imagen5 . ."
+        ". . . texto4 texto4 texto4 . texto5 texto5 texto5 . .";
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}
+
+.texto3 {
+    grid-area: texto3;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+.imagen5 {
+    grid-area: imagen5;
+}
+
+.texto4 {
+    grid-area: texto4;
+}
+
+.texto5 {
+    grid-area: texto5;
 }
