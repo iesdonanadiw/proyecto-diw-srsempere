@@ -1003,7 +1003,8 @@ select {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2em;
+    /* padding: 2em; */
+    padding-bottom: 0;
 
 }
 
@@ -1012,27 +1013,37 @@ select {
     max-height: 200px;
 }
 
-.fila1-viajar p {
+/* .fila1-viajar p {
     max-width: 356px;
     max-height: 200px;
-}
+} */
 
 .elemento1-viajar {
     border: 3px solid red;
-    height: 300px;
     width: 356px;
-    padding: 2em;
+    height: 200px;
+    /* padding: 2em; */
+    /* padding-left: 0;
+    padding-bottom: 0; */
 }
 
-.elemento1-viajar img {
+/* .elemento1-viajar img {
+    padding-left: 2em;
     width: 100%;
+} */
+
+.elemento1-viajar p {
+    text-align: justify;
+    /* padding-left: 0; */
+    width: 400px;
 }
 
 .elemento2-viajar {
     border: 3px solid green;
-    height: 300px;
     width: 356px;
-    padding: 2em;
+    height: 200px;
+    /* padding: 2em; */
+    padding-bottom: 0;
 }
 
 .elemento2-viajar img {
@@ -1041,9 +1052,13 @@ select {
 
 .elemento3-viajar {
     border: 3px solid blue;
-    height: 300px;
     width: 356px;
-    padding: 2em;
+    height: 200px;
+    /* padding: 2em;
+    padding-bottom: 0; */
+}
+.elemento3-viajar img {
+    height: 200px;
 }
 
 /* Fila 2 */
@@ -1053,14 +1068,28 @@ select {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 2em;
 }
 
-.fila2-viajar img {
+
+
+
+/* Fila 3 */
+
+.fila3-viajar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+}
+
+.fila3-viajar img {
     max-width: 356px;
     max-height: 200px;
 }
 
-.fila2-viajar p {
+.fila3-viajar p {
     max-width: 356px;
     max-height: 200px;
 }
@@ -1069,7 +1098,6 @@ select {
     border: 3px solid rgb(255, 230, 9);
     height: 300px;
     width: 356px;
-    padding: 2em;
     padding-right: 4em;
 }
 
@@ -1077,7 +1105,6 @@ select {
     border: 3px solid rgb(214, 9, 255);
     height: 300px;
     width: 356px;
-    padding: 2em;
     padding-left: 4em;
 }
 
