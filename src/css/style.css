@@ -1207,7 +1207,7 @@ select {
         "foto-quienes-somos texto-principal-quienes-somos"
         "nuestro-negocio metas-valores";
     padding-top: 6vh;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .container-quienes-somos p {
@@ -1219,8 +1219,8 @@ select {
     width: 20vw;
     height: 40vh;
     margin-left: auto;
-    margin-right: 12vw;
-    background-color: lightgreen;
+    margin-right: 5vw;
+    /* background-color: lightgreen; */
 }
 
 .foto-quienes-somos img {
@@ -1233,7 +1233,7 @@ select {
     grid-area: texto-principal-quienes-somos;
     width: 25vw;
     text-align: justify;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
 }
 
 .texto-principal-quienes-somos :last-child {
@@ -1243,11 +1243,12 @@ select {
 .nuestro-negocio {
     grid-area: nuestro-negocio;
     width: 25vw;
-    height: 25vh;
+    height: 23vh;
     text-align: justify;
     margin-left: auto;
-    margin-right: 9vw;
-    background-color: lightseagreen;
+    margin-right: 2vw;
+    /* background-color: lightseagreen; */
+    padding-top: 1vh;
 }
 
 .nuestro-negocio h2 {
@@ -1264,6 +1265,9 @@ select {
 
 .nuestro-negocio p {
     padding-top: 1vh;
+    border-width: 0px 1.9px 1.9px 1.9px;
+    border-style: solid;
+    border-color: black;
 }
 
 .metas-valores {
@@ -1271,16 +1275,24 @@ select {
     width: 25vw;
     height: 25vh;
     text-align: justify;
-    padding-top: 1vh;
+    padding-top: 1.1vh;
 }
 
 .metas-valores h2 {
     color: #8B8B8B;
     font-size: 1.4em;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1vh;
 }
 
 .metas-valores h1 {
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.metas-valores p {
+    padding-top: 1vh;
+    border-width: 0px 1.9px 1.9px 1.9px;
+    border-style: solid;
+    border-color: black;
 }
