@@ -861,7 +861,6 @@ select {
 .foto-forma img {
     max-width: 20em;
     max-height: 20em;
-    /* clip-path: inset(0px 0px 0px 0px); */
     border-radius: 0px 130px 0px 110px;
 }
 
@@ -950,7 +949,7 @@ select {
     height: 1.5em;
 }
 
-/* Contenido grupos.html */
+/** Contenido grupos.html */
 
 /* Calendario*/
 .calendario {
@@ -1106,4 +1105,47 @@ select {
 
 .elemento5-viajar img {
     width: 356px;
+}
+
+
+/** LOGIN.HTML */
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12vh;
+}
+
+.caja-formulario {
+    background-color: rgba(245, 245, 245, 0.596);
+    width: 380px;
+    height: 390px;
+    border: 2px solid #EBEBEA;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.titulo-caja-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eec996;
+    width: 380px;
+    height: 65px;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.titulo-caja-formulario img {
+    filter: invert(1);
+    max-width: 1.8vw;
+    max-height: auto;
+}
+
+.titulo-caja-formulario label:last-of-type {
+    padding-left: 4vw;
 }
