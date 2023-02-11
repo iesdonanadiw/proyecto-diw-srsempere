@@ -1194,3 +1194,93 @@ select {
 #btn-registrer-login {
     margin-right: 2vw;
 }
+
+/** QUIENESSOMOS.HTML */
+
+.container-quienes-somos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "foto-quienes-somos texto-principal-quienes-somos"
+        "nuestro-negocio metas-valores";
+    padding-top: 6vh;
+    border: 3px solid red;
+}
+
+.container-quienes-somos p {
+    font-size: larger;
+}
+
+.foto-quienes-somos {
+    grid-area: foto-quienes-somos;
+    width: 20vw;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: 12vw;
+    background-color: lightgreen;
+}
+
+.foto-quienes-somos img {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 1em;
+}
+
+.texto-principal-quienes-somos {
+    grid-area: texto-principal-quienes-somos;
+    width: 25vw;
+    text-align: justify;
+    background-color: lightsalmon;
+}
+
+.texto-principal-quienes-somos :last-child {
+    padding-top: 1em;
+}
+
+.nuestro-negocio {
+    grid-area: nuestro-negocio;
+    width: 25vw;
+    height: 25vh;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: 9vw;
+    background-color: lightseagreen;
+}
+
+.nuestro-negocio h2 {
+    color: #8B8B8B;
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1vh;
+}
+
+.nuestro-negocio h1 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nuestro-negocio p {
+    padding-top: 1vh;
+}
+
+.metas-valores {
+    grid-area: metas-valores;
+    width: 25vw;
+    height: 25vh;
+    text-align: justify;
+    padding-top: 1vh;
+}
+
+.metas-valores h2 {
+    color: #8B8B8B;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.metas-valores h1 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
