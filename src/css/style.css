@@ -987,7 +987,8 @@ select {
     text-align: center;
 }
 
-/* VIAJAR.HTML */
+
+/** VIAJAR.HTML */
 
 .container-viajar {
     display: flex;
@@ -996,14 +997,13 @@ select {
 
 }
 
-/*  Fila 1 */
+/**  Fila 1 */
 
 .fila1-viajar {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    /* padding: 2em; */
     padding-bottom: 0;
 
 }
@@ -1013,28 +1013,20 @@ select {
     max-height: 200px;
 }
 
-/* .fila1-viajar p {
-    max-width: 356px;
-    max-height: 200px;
-} */
 
 .elemento1-viajar {
     border: 3px solid red;
     width: 356px;
     height: 200px;
-    /* padding: 2em; */
-    /* padding-left: 0;
-    padding-bottom: 0; */
+    padding-right: 3.2em;
 }
 
-/* .elemento1-viajar img {
-    padding-left: 2em;
+.elemento1-viajar img {
     width: 100%;
-} */
+}
 
 .elemento1-viajar p {
     text-align: justify;
-    /* padding-left: 0; */
     width: 400px;
 }
 
@@ -1042,8 +1034,8 @@ select {
     border: 3px solid green;
     width: 356px;
     height: 200px;
-    /* padding: 2em; */
-    padding-bottom: 0;
+    padding-left: 3.2em;
+    padding-right: 3.2em;
 }
 
 .elemento2-viajar img {
@@ -1054,27 +1046,11 @@ select {
     border: 3px solid blue;
     width: 356px;
     height: 200px;
-    /* padding: 2em;
-    padding-bottom: 0; */
+    padding-left: 3.2em;
 }
 .elemento3-viajar img {
     height: 200px;
 }
-
-/* Fila 2 */
-
-.fila2-viajar {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2em;
-}
-
-
-
-
-/* Fila 3 */
 
 .fila3-viajar {
     display: flex;
@@ -1094,20 +1070,40 @@ select {
     max-height: 200px;
 }
 
+/** Fila 2 */
+
+.fila2-viajar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .elemento4-viajar {
     border: 3px solid rgb(255, 230, 9);
-    height: 300px;
-    width: 356px;
-    padding-right: 4em;
+    height: 100px;
+    width: 350px;
 }
 
 .elemento5-viajar {
     border: 3px solid rgb(214, 9, 255);
-    height: 300px;
-    width: 356px;
-    padding-left: 4em;
+    width: 350px;
+    height: 100px;
+    padding-right: 5em;
 }
 
 .elemento5-viajar img {
     width: 100%;
 }
+
+.elemento6-viajar {
+    border: 3px solid rgb(9, 255, 13);
+    width: 350px;
+    height: 100px;
+    padding-left: 7em;
+}
+
+
+
+
+/** Fila 3 */
