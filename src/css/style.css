@@ -1007,62 +1007,56 @@ select {
 }
 
 .fila1-viajar img {
-    max-width: 356px;
-    max-height: 200px;
+    max-width: 316px;
+    max-height: 160px;
+    padding-left: 1.2em;
 }
 
+.fila1-viajar p {
+    text-align: justify;
+    padding: 0.5em;
+    border-width: 0px 1.9px 1.9px 1.9px;
+    border-style: solid;
+    border-color: black;
+}
 
 .elemento1-viajar {
     display: flex;
     flex-direction: column;
-    border: 3px solid red;
     width: 356px;
-    height: 200px;
-    padding: 8em;
+    height: 260px;
+    padding: 3em 4em 0em 1em;
 }
 
 .elemento1-viajar img {
     width: 100%;
 }
 
-.elemento1-viajar p {
-    text-align: justify;
-}
 
 .elemento2-viajar {
     display: flex;
     flex-direction: column;
-    border: 3px solid green;
     width: 356px;
-    height: 200px;
-    padding: 8em;
+    height: 280px;
+    padding: 3em 1em 1em 1em;
 }
 
 .elemento2-viajar img {
     width: 100%;
 }
 
-.elemento2-viajar p {
-    text-align: justify;
-}
 
 .elemento3-viajar {
     display: flex;
     flex-direction: column;
-    border: 3px solid blue;
     width: 356px;
-    height: 200px;
-    padding: 8em;
+    height: 280px;
+    padding: 3em 1em 1em 4em;
 }
 
 .elemento3-viajar img {
     height: 200px;
 }
-
-.elemento3-viajar p {
-    text-align: justify;
-}
-
 
 /** Fila 2 */
 
@@ -1082,10 +1076,11 @@ select {
 .elemento4-viajar {
     display: flex;
     flex-direction: column;
-    border: 3px solid rgb(255, 230, 9);
+    /* border: 3px solid rgb(255, 230, 9); */
+    /* background-color: #DEC57E; */
     width: 356px;
-    height: 200px;
-    padding: 8em;
+    height: 260px;
+    padding: 1em 4em 1em 1em;
 }
 
 .elemento4-viajar img {
@@ -1094,17 +1089,15 @@ select {
 
 .elemento4-viajar p {
     text-align: justify;
-    width: 400px;
 }
 
 .elemento5-viajar {
     display: flex;
     flex-direction: column;
-    border: 3px solid rgb(214, 9, 255);
+    /* background-color: lightblue; */
     width: 356px;
-    height: 200px;
-    padding-right: 5em;
-    padding: 8em;
+    height: 260px;
+    padding: 1em 1em 1em 4em;
 }
 
 .elemento5-viajar img {
