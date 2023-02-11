@@ -1065,13 +1065,22 @@ select {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 6vh;
 }
 
 .fila2-viajar img {
-    max-width: 356px;
-    max-height: 200px;
+    max-width: 316px;
+    max-height: 160px;
+    padding-left: 1.2em;
 }
 
+.fila2-viajar p {
+    text-align: justify;
+    padding: 0.5em;
+    border-width: 0px 1.9px 1.9px 1.9px;
+    border-style: solid;
+    border-color: black;
+}
 
 .elemento4-viajar {
     display: flex;
@@ -1087,10 +1096,6 @@ select {
     width: 356px;
 }
 
-.elemento4-viajar p {
-    text-align: justify;
-}
-
 .elemento5-viajar {
     display: flex;
     flex-direction: column;
@@ -1102,8 +1107,4 @@ select {
 
 .elemento5-viajar img {
     width: 356px;
-}
-
-.elemento5-viajar p {
-    text-align: justify;
 }
