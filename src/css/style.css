@@ -261,16 +261,11 @@ button {
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 3px #666666;
-    -moz-box-shadow: 0px 0px 3px #666666;
     box-shadow: 0px 0px 3px #666666;
     text-shadow: 0px 1px 3px #666666;
     border: solid #DEC57E 2px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#DEC57E), to(#DEC57E));
-    background: -moz-linear-gradient(top, #DEC57E, #DEC57E);
 }
 
 button:hover {
@@ -749,12 +744,12 @@ select {
 
 .title-quote {
     display: flex;
-    flex: row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     border-radius: 0em 3em 0em 0em;
-    border: 2px solid lightgrey;
+    border: 2px solid rgba(211, 211, 211, 0.922);
     background-color: lightgrey;
     height: 6vh;
 }
@@ -1143,7 +1138,6 @@ select {
 .titulo-caja-formulario img {
     filter: invert(1);
     max-width: 1.8vw;
-    max-height: auto;
 }
 
 .titulo-caja-formulario label:last-of-type {
@@ -1268,6 +1262,7 @@ select {
     border-width: 0px 1.9px 1.9px 1.9px;
     border-style: solid;
     border-color: black;
+    padding: 0.3em;
 }
 
 .metas-valores {
@@ -1295,4 +1290,5 @@ select {
     border-width: 0px 1.9px 1.9px 1.9px;
     border-style: solid;
     border-color: black;
+    padding: 0.3em;
 }
