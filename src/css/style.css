@@ -256,8 +256,9 @@ a {
 */
 
 button {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+    font-weight: bold;
     padding: 10px;
     text-decoration: none;
     -webkit-border-radius: 10px;
@@ -1114,11 +1115,10 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 12vh;
+    padding-top: 8vh;
 }
 
 .caja-formulario {
-    background-color: rgba(245, 245, 245, 0.596);
     width: 380px;
     height: 390px;
     border: 2px solid #EBEBEA;
@@ -1148,4 +1148,49 @@ select {
 
 .titulo-caja-formulario label:last-of-type {
     padding-left: 4vw;
+}
+
+.cuerpo-caja-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo-caja-formulario p {
+    font-size: 1.2em;
+    padding: 1em;
+    color: #8B8B8B
+}
+
+.cuerpo-caja-formulario button {
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2em;
+    padding: 0.8em;
+    width: 8vw;
+    font-size: 1em;
+}
+
+.input-login {
+    background-color: #F5F5F5;
+    border: 2px solid #EBEBEA;
+    width: 17vw;
+    height: 5vh;
+}
+
+.input-login::placeholder {
+    padding-left: 1em;
+}
+
+#usuario-login {
+    margin-top: 1vh;
+}
+
+#contraseña-login {
+    margin-top: 2.3vh;
+}
+
+#btn-registrer-login {
+    margin-right: 2vw;
 }

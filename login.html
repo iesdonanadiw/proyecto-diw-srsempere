@@ -29,8 +29,8 @@
                     </div>
                 </div>
                 <div class="der-nav">
-                    <button><a href="registrer.html">Sign up</a></button>
-                    <button><a href="login.html">Login</a></button>
+                    <button id="btn-registrer-login"><a href="registrer.html">Sign up</a></button>
+                    <button hidden><a href="login.html">Login</a></button>
                 </div>
 
             </div>
@@ -39,7 +39,6 @@
             <img src="src/img/logo.png" alt="Logo de la red de tinta" class="logo-pag">
             <div class="input-wrapper">
                 <input type="search" class="input" placeholder="Buscar entre líneas">
-
                 <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                 </svg>
@@ -55,6 +54,12 @@
                         <img src="src/img/expand.svg">
                         <img src="src/img/close.svg">
                     </label>
+                </div>
+                <div class="cuerpo-caja-formulario">
+                    <p>Por favor, introduce tu usuario y contraseña para iniciar sesion</p>
+                    <input type="text" name="usuario" id="usuario-login" placeholder="*Usuario" class="input-login">
+                    <input type="text" name="contraseña" id="contraseña-login" placeholder="*Contraseña" class="input-login">
+                    <button type="submit">Iniciar Sesión</button>
                 </div>
             </div>
         </div>
