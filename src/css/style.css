@@ -1292,3 +1292,92 @@ select {
     border-color: black;
     padding: 0.3em;
 }
+
+
+/* Animación menú */
+
+/* Logo */
+
+.logo-nav img {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.logo-nav img:hover {
+    transform: scale(1.2);
+}
+
+/* Botones registro y login */
+
+.der-nav button {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.der-nav button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Enlaces */
+.menu-dav ul li a {
+    opacity: 1;
+    animation: flash 0.5s linear;
+    color: white; /* color inicial */
+}
+
+.menu-dav ul li a:hover {
+    animation-play-state: paused;
+    color: black; /* color al pasar el ratón */
+    font-weight: bold;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* Animación logo */
+
+@keyframes animacion-logo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-dav ul li a {
+    animation: animacion-logo 2s ease-in-out;
+}
+
+.logo-pag {
+    animation: animacion-logo 10s ease-in-out;
+}
+
+
+/* Transición en la caja de búsqueda */
+.input-wrapper {
+    position: relative; /* para posicionar el icono */
+}
+
+.input {
+    width: 50px; /* ancho inicial */
+    transition: width 0.5s ease; /* duración y tipo de transición */
+}
+
+.input-icon {
+    position: absolute; /* para colocar el icono sobre el input */
+    right: 0; /* alineado a la derecha */
+}
+
+.input:focus { /* al hacer clic dentro del input */
+    width: 200px; /* ancho al expandirse */
+}
+
+.input:focus + .input-icon { /* al hacer clic dentro del input */
+    right: 250px; /* mover el icono a la derecha */
+}
