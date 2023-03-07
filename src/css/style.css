@@ -1324,20 +1324,31 @@ select {
 .menu-dav ul li a {
     opacity: 1;
     animation: flash 0.5s linear;
-    color: white; /* color inicial */
+    color: white;
+    /* color inicial */
 }
 
 .menu-dav ul li a:hover {
     animation-play-state: paused;
-    color: black; /* color al pasar el ratón */
+    color: black;
+    /* color al pasar el ratón */
     font-weight: bold;
 }
 
 @keyframes flash {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 /* Animación logo */
 
 @keyframes animacion-logo {
@@ -1361,23 +1372,60 @@ select {
 
 /* Transición en la caja de búsqueda */
 .input-wrapper {
-    position: relative; /* para posicionar el icono */
+    position: relative;
+    /* para posicionar el icono */
 }
 
 .input {
-    width: 50px; /* ancho inicial */
-    transition: width 0.5s ease; /* duración y tipo de transición */
+    width: 50px;
+    /* ancho inicial */
+    transition: width 0.5s ease;
+    /* duración y tipo de transición */
 }
 
 .input-icon {
-    position: absolute; /* para colocar el icono sobre el input */
-    right: 0; /* alineado a la derecha */
+    position: absolute;
+    /* para colocar el icono sobre el input */
+    right: 0;
+    /* alineado a la derecha */
 }
 
-.input:focus { /* al hacer clic dentro del input */
-    width: 200px; /* ancho al expandirse */
+.input:focus {
+    /* al hacer clic dentro del input */
+    width: 200px;
+    /* ancho al expandirse */
 }
 
-.input:focus + .input-icon { /* al hacer clic dentro del input */
-    right: 250px; /* mover el icono a la derecha */
+.input:focus+.input-icon {
+    /* al hacer clic dentro del input */
+    right: 250px;
+    /* mover el icono a la derecha */
+}
+
+
+/* Copos de nieve para viajar.html */
+
+/* Estilo para los copos de nieve */
+.snowflake {
+    position: absolute;
+    top: -40px;
+    animation-name: nieve;
+    animation-iteration-count: infinite;
+}
+
+/* Animación para los copos de nieve */
+@keyframes nieve {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        top: 100%;
+        left: -500px;
+        opacity: .2;
+    }
 }
