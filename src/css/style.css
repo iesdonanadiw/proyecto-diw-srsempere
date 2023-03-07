@@ -216,6 +216,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding-right: 5vw;
+    margin-left: 1vw;
 }
 
 /*
@@ -1214,7 +1215,6 @@ select {
     height: 40vh;
     margin-left: auto;
     margin-right: 5vw;
-    /* background-color: lightgreen; */
 }
 
 .foto-quienes-somos img {
@@ -1227,7 +1227,6 @@ select {
     grid-area: texto-principal-quienes-somos;
     width: 25vw;
     text-align: justify;
-    /* background-color: lightsalmon; */
 }
 
 .texto-principal-quienes-somos :last-child {
@@ -1241,7 +1240,6 @@ select {
     text-align: justify;
     margin-left: auto;
     margin-right: 2vw;
-    /* background-color: lightseagreen; */
     padding-top: 1vh;
 }
 
@@ -1293,8 +1291,15 @@ select {
     padding: 0.3em;
 }
 
+/* Cuadro de diálogo*/
 
-/* Animación menú */
+dialog {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-left: 1em;
+}
+
+/* Animación menú superior */
 
 /* Logo */
 
@@ -1349,7 +1354,25 @@ select {
     }
 }
 
-/* Animación logo */
+/* Animación menú pie */
+
+.izquierda p a {
+    opacity: 1;
+    animation: flash 0.5s linear;
+    color: white;
+    /* color inicial */
+}
+
+.izquierda p a:hover {
+    animation-play-state: paused;
+    color: black;
+    /* color al pasar el ratón */
+    font-weight: bold;
+}
+
+
+
+/* Animación logo cabecera - cuerpo */
 
 @keyframes animacion-logo {
     from {

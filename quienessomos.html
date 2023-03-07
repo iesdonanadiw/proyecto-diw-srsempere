@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Red de Tinta</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="./src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -17,8 +16,7 @@
             <div class="navegador">
                 <div class="izq-nav">
                     <div class="logo-nav">
-                        <a href="index.html"><img id="img-nav" src="src/img/logo-removebg.png"
-                                alt="Logo de la red de tinta"></a>
+                        <a href="index.html"><img id="img-nav" src="src/img/logo.png" alt="Logo de la red de tinta"></a>
                     </div>
                     <div class="menu-dav">
                         <ul>
@@ -38,7 +36,34 @@
             </div>
         </nav>
         <div class="logo-search">
-            <img src="src/img/logo.png" alt="Logo de la red de tinta" class="logo-pag">
+            <details>
+                <summary>La Red de Tinta</summary>
+                <img src="src/img/gif-logo.gif" alt="Logo de la red de tinta" class="logo-pag">
+                </br>
+                <button id="toggle-dialog">Mostrar | Ocultar información</button>
+                <dialog id="contact-dialog">
+                    <h2>Información de contacto</h2>
+                    <p>La Red de Tinta</p>
+                    <p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+                    <p>Teléfono: +1 (555) 123-4567</p>
+                    <p>Correo electrónico: info@laredetinta.com</p>
+                </dialog>
+
+
+
+                <script>
+                    var dialog = document.getElementById('contact-dialog');
+
+                    document.getElementById('toggle-dialog').addEventListener('click', function () {
+                        if (dialog.hasAttribute('open')) {
+                            dialog.removeAttribute('open');
+                        } else {
+                            dialog.setAttribute('open', '');
+                        }
+                    });
+                </script>
+            </details>
+
             <h1 class="titulo-encabezado">Quienes Somos</h1>
             <div class="input-wrapper">
                 <input type="search" class="input" placeholder="Buscar entre líneas">
@@ -53,8 +78,10 @@
     </header>
     <main>
         <div class="container-quienes-somos">
-            <div class="foto-quienes-somos"><p><img src="src/img/grupo-debatiendo.jpg"
-                alt="Imagen de un grupo de socios debatiendo en un grupo dinámico."></p></div>
+            <div class="foto-quienes-somos">
+                <p><img src="src/img/grupo-debatiendo.jpg"
+                        alt="Imagen de un grupo de socios debatiendo en un grupo dinámico."></p>
+            </div>
             <div class="texto-principal-quienes-somos">
                 <p>
                     ¿Te gusta leer, viajar y compartir tus escritos? Entonces, la red de tinta es el lugar ideal para
@@ -63,6 +90,8 @@
                     lecturas de diferentes géneros y temáticas, participar en viajes literarios por distintos países y
                     culturas, y publicar tus propios textos y escritos para recibir comentarios y sugerencias de otros
                     usuarios.
+                    </br>
+
 
                 </p>
                 <p>
@@ -78,26 +107,33 @@
                 <h2>Nuestro Negocio</h2>
                 <h1>La cultura como misión</h1>
                 <p>
-                    Nuestro negocio es ofrecer una experiencia única y personalizada a los amantes de la literatura. Somos una empresa innovadora y creativa que combina la lectura, el viaje y la escritura en una sola plataforma online. Nuestra misión es fomentar el hábito lector, el intercambio cultural y la expresión artística entre personas de todo el mundo, a través de nuestros servicios.
+                    Nuestro negocio es ofrecer una experiencia única y personalizada a los amantes de la literatura.
+                    Somos una empresa innovadora y creativa que combina la lectura, el viaje y la escritura en una sola
+                    plataforma online. Nuestra misión es fomentar el hábito lector, el intercambio cultural y la
+                    expresión artística entre personas de todo el mundo, a través de nuestros servicios.
                 </p>
             </div>
             <div class="metas-valores">
                 <h2>Metas y Valores</h2>
                 <h1>Visión</h1>
                 <p>
-                    Nuestra visión es convertirnos en una referencia en el sector literario, ofreciendo servicios de calidad, variedad y valor añadido a nuestros clientes, que disfruten de la lectura, el viaje y la escritura. Nuestros valores son la pasión por la literatura, la colaboración entre lectores y escritores, la diversidad de géneros y culturas, y la satisfacción de nuestros usuarios.
+                    Nuestra visión es convertirnos en una referencia en el sector literario, ofreciendo servicios de
+                    calidad, variedad y valor añadido a nuestros clientes, que disfruten de la lectura, el viaje y la
+                    escritura. Nuestros valores son la pasión por la literatura, la colaboración entre lectores y
+                    escritores, la diversidad de géneros y culturas, y la satisfacción de nuestros usuarios.
                 </p>
             </div>
         </div>
     </main>
-    <footer class="pie navegador ">
-        <div class="izquierda">
-            <p><a href="quienessomos.html">Quienes somos</a></p>
-            <p><a href="mailto:info@reddetinta.es?Subject=Contacto%web%email">Contacto</a></p>
-        </div>
-        <div class="derecha">
-            <p>© 2023 Cádiz ES. Todos los derechos reservados</p>
-        </div>
-    </footer>
+</body>
+<footer class="pie navegador ">
+    <div class="izquierda">
+        <p><a href="quienessomos.html">Quienes somos</a></p>
+        <p><a href="mailto:info@reddetinta.es?Subject=Contacto%web%email">Contacto</a></p>
+    </div>
+    <div class="derecha">
+        <p>© 2023 Cádiz ES. Todos los derechos reservados</p>
+    </div>
+</footer>
 
 </html>
