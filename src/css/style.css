@@ -138,6 +138,10 @@ body {
     min-height: 100vh;
 }
 
+.hidden {
+    display: none;
+}
+
 /*
     ###### HEADER ######
 */
@@ -216,6 +220,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding-right: 5vw;
+    margin-left: 1vw;
 }
 
 /*
@@ -328,6 +333,7 @@ button:hover {
     max-height: 100%;
     border-radius: 50px;
 }
+
 
 .img2 {
     grid-area: img2;
@@ -1214,7 +1220,6 @@ select {
     height: 40vh;
     margin-left: auto;
     margin-right: 5vw;
-    /* background-color: lightgreen; */
 }
 
 .foto-quienes-somos img {
@@ -1227,7 +1232,6 @@ select {
     grid-area: texto-principal-quienes-somos;
     width: 25vw;
     text-align: justify;
-    /* background-color: lightsalmon; */
 }
 
 .texto-principal-quienes-somos :last-child {
@@ -1241,7 +1245,6 @@ select {
     text-align: justify;
     margin-left: auto;
     margin-right: 2vw;
-    /* background-color: lightseagreen; */
     padding-top: 1vh;
 }
 
@@ -1291,4 +1294,204 @@ select {
     border-style: solid;
     border-color: black;
     padding: 0.3em;
+}
+
+/* Cuadro de diálogo*/
+
+dialog {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-left: 1em;
+}
+
+/* Animación menú superior */
+
+/* Logo */
+
+.logo-nav img {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.logo-nav img:hover {
+    transform: scale(1.2);
+}
+
+/* Botones registro y login */
+
+.der-nav button {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.der-nav button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Enlaces */
+.menu-dav ul li a {
+    opacity: 1;
+    animation: flash 0.5s linear;
+    color: white;
+    /* color inicial */
+}
+
+.menu-dav ul li a:hover {
+    animation-play-state: paused;
+    color: black;
+    /* color al pasar el ratón */
+    font-weight: bold;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animación menú pie */
+
+.izquierda p a {
+    opacity: 1;
+    animation: flash 0.5s linear;
+    color: white;
+    /* color inicial */
+}
+
+.izquierda p a:hover {
+    animation-play-state: paused;
+    color: black;
+    /* color al pasar el ratón */
+    font-weight: bold;
+}
+
+
+
+/* Animación logo cabecera - cuerpo */
+
+@keyframes animacion-logo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-dav ul li a {
+    animation: animacion-logo 2s ease-in-out;
+}
+
+.logo-pag {
+    animation: animacion-logo 10s ease-in-out;
+}
+
+
+/* Transición en la caja de búsqueda */
+.input-wrapper {
+    position: relative;
+    /* para posicionar el icono */
+}
+
+.input {
+    width: 50px;
+    /* ancho inicial */
+    transition: width 0.5s ease;
+    /* duración y tipo de transición */
+}
+
+.input-icon {
+    position: absolute;
+    /* para colocar el icono sobre el input */
+    right: 0;
+    /* alineado a la derecha */
+}
+
+.input:focus {
+    /* al hacer clic dentro del input */
+    width: 200px;
+    /* ancho al expandirse */
+}
+
+.input:focus+.input-icon {
+    /* al hacer clic dentro del input */
+    right: 250px;
+    /* mover el icono a la derecha */
+}
+
+
+/* Copos de nieve para viajar.html */
+
+/* Estilo para los copos de nieve */
+.snowflake {
+    position: absolute;
+    top: -40px;
+    animation-name: nieve;
+    animation-iteration-count: infinite;
+}
+
+/* Animación para los copos de nieve */
+@keyframes nieve {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        top: 100%;
+        left: -500px;
+        opacity: .2;
+    }
+}
+
+
+/* EFECTO GRIS AL PASAR EL RATÓN POR LAS IMÁGENES */
+
+img:hover {
+    filter: grayscale();
+}
+
+
+/* CONTENEDOR VIDEOS */
+
+.contenedor-videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.contenedor-videos video {
+    padding: 2em;
+}
+
+
+/* VÍDEO DE FONDO - LOGIN */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 10%;
+    min-height: 100%;
+}
+
+/* Agrega un filtro para reducir la opacidad del vídeo */
+#myVideo {
+    filter: opacity(13%);
 }
