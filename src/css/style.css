@@ -138,6 +138,10 @@ body {
     min-height: 100vh;
 }
 
+.hidden {
+    display: none;
+}
+
 /*
     ###### HEADER ######
 */
@@ -329,6 +333,7 @@ button:hover {
     max-height: 100%;
     border-radius: 50px;
 }
+
 
 .img2 {
     grid-area: img2;
@@ -1451,4 +1456,42 @@ dialog {
         left: -500px;
         opacity: .2;
     }
+}
+
+
+/* EFECTO GRIS AL PASAR EL RATÓN POR LAS IMÁGENES */
+
+img:hover {
+    filter: grayscale();
+}
+
+
+/* CONTENEDOR VIDEOS */
+
+.contenedor-videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.contenedor-videos video {
+    padding: 2em;
+}
+
+
+/* VÍDEO DE FONDO - LOGIN */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 10%;
+    min-height: 100%;
+}
+
+/* Agrega un filtro para reducir la opacidad del vídeo */
+#myVideo {
+    filter: opacity(13%);
 }
